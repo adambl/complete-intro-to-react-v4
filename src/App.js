@@ -3,6 +3,7 @@ import { Link, Router } from '@reach/router'
 import Details from './Details'
 import React from 'react'
 import Results from './Results'
+import SearchParams from './SearchParams'
 import { render } from 'react-dom'
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
                 <Router>
                     <Results path="/"/>
                     <Details path="/details/:id" />
+                    <SearchParams path="/search-params" />
                 </Router>
             </div>
         );
